@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeerLink.AI - Build Perfect College Teams</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">PeerLink.AI</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#problem">Problem</a></li>
+                <li><a href="#solution">Solution</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Build the Perfect College Project Team</h1>
+            <p>AI-powered platform to match students based on skills, personality, and commitment</p>
+            <button class="btn" onclick="document.getElementById('demo').scrollIntoView({behavior: 'smooth'})">
+                Get Started
+            </button>
+        </div>
+    </section>
+
+    <section class="problem-section" id="problem">
+        <div class="container">
+            <h2>Understanding the Problem</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto; font-size: 18px;">
+                Team formation for projects can be inefficient, unbalanced, and stressful, 
+                leading to reduced collaboration quality and student satisfaction.
+            </p>
+            <div class="quote">
+                "Team formation is often the most stressful part"
+                <div style="font-size: 16px; margin-top: 10px; font-style: normal;">— Student Survey Respondent</div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Transparency in Skills</h3>
+                    <p>Students need clear visibility of each other's capabilities and expertise</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Compatibility & Trust</h3>
+                    <p>Finding teammates who share similar goals and work ethics</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h3>Easier Discovery</h3>
+                    <p>Simple way to find and connect with potential collaborators</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solution">
+        <div class="container">
+            <h2>Our Solution</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 50px; font-size: 18px;">
+                Students need a smarter way to form teams that balance skills, personalities, 
+                and commitment levels, making projects more efficient, creative, and conflict-free.
+            </p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Algorithm-Based Matching</h3>
+                    <p>Advanced AI algorithms to find your perfect teammates</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Skill & Personality Analysis</h3>
+                    <p>Comprehensive assessment of technical and soft skills</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>User Preferences</h3>
+                    <p>Customized matching based on your specific needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: #f8f9fa;">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="journey-steps">
+                <div class="journey-step">
+                    <div class="step-number">1</div>
+                    <h3>Onboarding</h3>
+                    <p>Enter your details and take a compatibility quiz to generate your unique skill map</p>
+                </div>
+                <div class="journey-step">
+                    <div class="step-number">2</div>
+                    <h3>Matching</h3>
+                    <p>Search for teammates or receive AI-recommended matches based on your profile</p>
+                </div>
+                <div class="journey-step">
+                    <div class="step-number">3</div>
+                    <h3>Team Formation</h3>
+                    <p>Request to join a team and start collaborating in a shared workspace</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo">
+        <div class="container">
+            <h2>Try Our Demo</h2>
+            <div class="demo-form">
+                <form id="demoForm">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" name="name" required placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" name="email" required placeholder="your.email@college.edu">
+                    </div>
+                    <div class="form-group">
+                        <label>Primary Skill</label>
+                        <select name="skill" required>
+                            <option value="">Select a skill</option>
+                            <option value="programming">Programming</option>
+                            <option value="design">Design</option>
+                            <option value="research">Research</option>
+                            <option value="writing">Writing</option>
+                            <option value="management">Project Management</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Work Style</label>
+                        <select name="workstyle" required>
+                            <option value="">Select your work style</option>
+                            <option value="leader">Leader</option>
+                            <option value="collaborator">Collaborator</option>
+                            <option value="independent">Independent Worker</option>
+                            <option value="supporter">Supporter</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Project Interest</label>
+                        <textarea name="interest" rows="3" placeholder="Describe what kind of projects you're interested in..."></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">
+                        Find My Matches
+                    </button>
+                </form>
+                <div id="result" style="margin-top: 20px; padding: 20px; background: #f0f4ff; border-radius: 5px; display: none;">
+                    <h3 style="color: #667eea; margin-bottom: 10px;">Success!</h3>
+                    <p>Thank you for trying our demo! Your profile has been created and we're finding your perfect matches.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h3>PeerLink.AI</h3>
+            <p>AI-powered Platform to Build the Perfect College Project Team</p>
+            <div class="team-info">
+                <p>Team Xpark | KIET Group of Institutions</p>
+            </div>
+            <p style="margin-top: 20px; font-size: 14px;">&copy; 2024 PeerLink.AI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
